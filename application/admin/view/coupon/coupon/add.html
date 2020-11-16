@@ -1,0 +1,68 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+
+    <div class="form-group">
+        <label for="c-title" class="control-label col-xs-12 col-sm-2">{:__('Title')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议10字以内哦~" id="c-title" data-rule="required" class="form-control" name="row[title]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-english_title" class="control-label col-xs-12 col-sm-2">{:__('EnglishTitle')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议10字以内哦~" id="c-english_title" data-rule="required" class="form-control" name="row[english_title]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-desc" class="control-label col-xs-12 col-sm-2">{:__('Desc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议20字以内哦~" id="c-desc" data-rule="required" class="form-control" name="row[desc]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-english_desc" class="control-label col-xs-12 col-sm-2">{:__('EnglishDesc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议20字以内哦~" id="c-english_desc" data-rule="required" class="form-control" name="row[english_desc]" type="text" value="">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-content" class="control-label col-xs-12 col-sm-2">{:__('Content')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-content" name="row[content]" type="text" value="" data-rule="required" class="form-control editor"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-english_content" class="control-label col-xs-12 col-sm-2">{:__('EnglishContent')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <textarea id="c-english_content" name="row[english_content]" type="text" value="" data-rule="required" class="form-control editor"></textarea>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-valid_time" class="control-label col-xs-12 col-sm-2">{:__('valid_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议20字以内哦~" id="c-valid_time" data-rule="required" class="form-control" name="row[valid_time]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-english_valid_time" class="control-label col-xs-12 col-sm-2">{:__('english_valid_time')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议20字以内哦~" id="c-english_valid_time" data-rule="required" class="form-control" name="row[english_valid_time]" type="text" value="">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-price" class="control-label col-xs-12 col-sm-2">{:__('price')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-price" data-rule="required" class="form-control" name="row[price]" type="number" value="">
+        </div>
+    </div>
+    
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

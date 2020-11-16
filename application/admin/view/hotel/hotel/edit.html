@@ -1,0 +1,119 @@
+<form id="edit-form" class="form-horizontal" role="form" data-toggle="validator" method="POST" action="">
+    <div class="form-group">
+        <label for="c-name" class="control-label col-xs-12 col-sm-2">{:__('Name')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议10字以内哦~" id="c-name" data-rule="required" class="form-control" name="row[name]" type="text" value="{$row.name}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-english_name" class="control-label col-xs-12 col-sm-2">{:__('EnglishName')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议10字以内哦~" id="c-english_name" data-rule="required" class="form-control" name="row[english_name]" type="text" value="{$row.english_name}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-desc" class="control-label col-xs-12 col-sm-2">{:__('Desc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议20字以内哦~" id="c-desc" data-rule="required" class="form-control" name="row[desc]" type="text" value="{$row.desc}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-english_desc" class="control-label col-xs-12 col-sm-2">{:__('EnglishDesc')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议20字以内哦~" id="c-english_desc" data-rule="required" class="form-control" name="row[english_desc]" type="text" value="{$row.english_desc}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-cover" class="control-label col-xs-12 col-sm-2">{:__('Cover')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input placeholder="建议图片尺寸160*122哦~" id="c-cover" data-rule="required" class="form-control" size="50" name="row[cover]" type="text" value="{$row.cover}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-cover" class="btn btn-danger plupload" data-input-id="c-cover" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-cover"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-cover" class="btn btn-primary fachoose" data-input-id="c-cover" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-cover"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-cover"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-english_cover" class="control-label col-xs-12 col-sm-2">{:__('EnglishCover')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <div class="input-group">
+                <input placeholder="建议图片尺寸160*122哦~" id="c-english_cover" data-rule="required" class="form-control" size="50" name="row[english_cover]" type="text" value="{$row.english_cover}">
+                <div class="input-group-addon no-border no-padding">
+                    <span><button type="button" id="plupload-english_cover" class="btn btn-danger plupload" data-input-id="c-english_cover" data-mimetype="image/gif,image/jpeg,image/png,image/jpg,image/bmp" data-multiple="false" data-preview-id="p-english_cover"><i class="fa fa-upload"></i> {:__('Upload')}</button></span>
+                    <span><button type="button" id="fachoose-english_cover" class="btn btn-primary fachoose" data-input-id="c-english_cover" data-mimetype="image/*" data-multiple="false"><i class="fa fa-list"></i> {:__('Choose')}</button></span>
+                </div>
+                <span class="msg-box n-right" for="c-english_cover"></span>
+            </div>
+            <ul class="row list-inline plupload-preview" id="p-english_cover"></ul>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-address" class="control-label col-xs-12 col-sm-2">{:__('Address')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议10字以内哦~" id="c-address" data-rule="required" class="form-control" name="row[address]" type="text" value="{$row.address}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-english_address" class="control-label col-xs-12 col-sm-2">{:__('EnglishAddress')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议10字以内哦~" id="c-english_address" data-rule="required" class="form-control" name="row[english_address]" type="text" value="{$row.english_address}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-business_time" class="control-label col-xs-12 col-sm-2">{:__('BusinessTime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议10字以内哦~" id="c-business_time" data-rule="required" class="form-control" name="row[business_time]" type="text" value="{$row.business_time}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="c-english_business_time" class="control-label col-xs-12 col-sm-2">{:__('EnglishBusinessTime')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="建议10字以内哦~" id="c-english_business_time" data-rule="required" class="form-control" name="row[english_business_time]" type="text" value="{$row.english_business_time}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label for="c-coupon_password" class="control-label col-xs-12 col-sm-2">{:__('CouponPassword')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input placeholder="每家酒店的核销密码都是唯一的哦~" id="c-coupon_password" data-rule="required" class="form-control" name="row[coupon_password]" type="text" value="{$row.coupon_password}">
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Longitude')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-longitude" data-rule="required" class="form-control form-control" name="row[longitude]" type="number" value="{$row.longitude}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Latitude')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <input id="c-latitude" data-rule="required" class="form-control form-control" name="row[latitude]" type="number" value="{$row.latitude}">
+        </div>
+    </div>
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('Map')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="button" class="btn btn-primary" data-toggle="addresspicker" data-lat-id="c-latitude" data-lng-id="c-longitude">{:__('Click on the map to get latitude and longitude')}</button>
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label col-xs-12 col-sm-2">{:__('IsShow')}:</label>
+        <div class="col-xs-12 col-sm-8">
+            {:build_radios('row[is_show]', ['0'=>__('False'), '1'=>__('True')], $row['is_show'])}
+        </div>
+    </div>
+    
+    <div class="form-group layer-footer">
+        <label class="control-label col-xs-12 col-sm-2"></label>
+        <div class="col-xs-12 col-sm-8">
+            <button type="submit" class="btn btn-success btn-embossed disabled">{:__('OK')}</button>
+            <button type="reset" class="btn btn-default btn-embossed">{:__('Reset')}</button>
+        </div>
+    </div>
+</form>

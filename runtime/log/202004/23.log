@@ -1,0 +1,219 @@
+---------------------------------------------------------------
+[ 2020-04-23T23:49:55+08:00 ] 172.21.0.1 POST ginco-admin.com/6Wm8eIkJu3.php/index/login?url=%2F6Wm8eIkJu3.php%2Fhotel%2Fhotel%3Fref%3Daddtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.027613s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_admin` [ RunTime:0.056363s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_admin` WHERE  `username` = 'admin' LIMIT 1 [ RunTime:0.003813s ]
+[ sql ] [ SQL ] UPDATE `ginco_admin`  SET `logintime`=1587656995,`token`='72a72c7b-2e0e-4173-a81c-a99b0e5ba9f4',`updatetime`=1587656995  WHERE  `id` = 1 [ RunTime:0.004138s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_admin_log` [ RunTime:0.006395s ]
+[ sql ] [ SQL ] INSERT INTO `ginco_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('登录' , '{\"url\":\"\\/6Wm8eIkJu3.php\\/hotel\\/hotel?ref=addtabs\",\"__token__\":\"82ff04194f5803297bfc1107f1a09342\",\"username\":\"admin\"}' , '/6Wm8eIkJu3.php/index/login?url=%2F6Wm8eIkJu3.php%2Fhotel%2Fhotel%3Fref%3Daddtabs' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36' , '172.21.0.1' , 1587656995) [ RunTime:0.001232s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:49:55+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/hotel/hotel?ref=addtabs
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005017s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.008436s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.004429s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.008063s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002036s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:49:55+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/index/index
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004152s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.003648s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002487s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002888s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001942s ]
+[ sql ] [ SQL ] SELECT `name`,`pid` FROM `ginco_auth_rule` WHERE  `status` = 'normal'  AND `ismenu` = 0  AND `name` LIKE '%/index' [ RunTime:0.001002s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:49:56+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/hotel/hotel?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003817s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.003875s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002859s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002277s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ginco_auth_rule` WHERE  `name` = 'hotel/hotel' LIMIT 1 [ RunTime:0.001457s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:49:56+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/ajax/lang?callback=define&controllername=index&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004605s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.005272s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002750s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001811s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:49:56+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/ajax/lang?callback=define&controllername=hotel.hotel&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006125s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.005008s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.003251s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002467s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:49:56+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/general/config?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.005336s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.004631s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.003092s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.004086s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001970s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_config` [ RunTime:0.013700s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_config` [ RunTime:0.001238s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ginco_auth_rule` WHERE  `name` = 'general/config' LIMIT 1 [ RunTime:0.000890s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:49:56+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/hotel/hotel/index?sort=ginco_api_hotel.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1587656996035
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004096s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.003811s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002976s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.003787s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002007s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_hotel` [ RunTime:0.011019s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ginco_api_hotel` LIMIT 1 [ RunTime:0.001543s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_hotel` ORDER BY `ginco_api_hotel`.`id` DESC LIMIT 0,10 [ RunTime:0.000938s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:49:56+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/ajax/lang?callback=define&controllername=general.config&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004488s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.003632s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002344s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.003074s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001915s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:50:07+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/hotel/hotel/edit/ids/4?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002666s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.001893s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001598s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002132s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001860s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_hotel` [ RunTime:0.002268s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_hotel` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000865s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:50:07+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/ajax/lang?callback=define&controllername=hotel.hotel&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003459s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.002693s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002552s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002791s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002109s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:50:50+08:00 ] 172.21.0.1 POST ginco-admin.com/6Wm8eIkJu3.php/hotel/hotel/edit/ids/4?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002817s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.001965s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001920s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002923s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002411s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_hotel` [ RunTime:0.002101s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_hotel` WHERE  `id` = 4 LIMIT 1 [ RunTime:0.000956s ]
+[ sql ] [ SQL ] UPDATE `ginco_api_hotel`  SET `longitude`='120.715169',`latitude`='31.330542',`update_time`=1587657050  WHERE  `id` = 4 [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_admin_log` [ RunTime:0.001604s ]
+[ sql ] [ SQL ] INSERT INTO `ginco_admin_log` (`title` , `content` , `url` , `admin_id` , `username` , `useragent` , `ip` , `createtime`) VALUES ('酒店管理 编辑' , '{\"dialog\":\"1\",\"row\":{\"name\":\"\\u5343\\u767e\\u5473\",\"english_name\":\"Brand information\",\"desc\":\"test\",\"english_desc\":\"1\",\"cover\":\"http:\\/\\/ginco.admin.uapi.net.cn\\/uploads\\/20200207\\/ab21aa1c22fab96295e504ec1cbf7320.jpeg\",\"english_cover\":\"http:\\/\\/ginco.admin.uapi.net.cn\\/uploads\\/20200207\\/ab21aa1c22fab96295e504ec1cbf7320.jpeg\",\"address\":\"\\u5e7f\\u5dde\",\"english_address\":\"11\",\"business_time\":\"11\",\"english_business_time\":\"11\",\"coupon_password\":\"1231\",\"longitude\":\"120.715169\",\"latitude\":\"31.330542\",\"is_show\":\"1\"},\"ids\":\"4\"}' , '/6Wm8eIkJu3.php/hotel/hotel/edit/ids/4?dialog=1' , 1 , 'admin' , 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.163 Safari/537.36' , '172.21.0.1' , 1587657050) [ RunTime:0.006820s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:50:51+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/hotel/hotel/index?sort=ginco_api_hotel.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1587656996036
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008578s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.004259s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001909s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002656s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002254s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_hotel` [ RunTime:0.002696s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ginco_api_hotel` LIMIT 1 [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_hotel` ORDER BY `ginco_api_hotel`.`id` DESC LIMIT 0,10 [ RunTime:0.001001s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:43+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/coupon?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003583s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.002227s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001823s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002147s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001680s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ginco_auth_rule` WHERE  `name` = 'coupon/coupon' LIMIT 1 [ RunTime:0.000691s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:43+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/ajax/lang?callback=define&controllername=coupon.coupon&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003496s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.003628s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002035s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002098s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001766s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:43+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/coupon/index?sort=ginco_api_coupon.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1587657403432
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003079s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.002820s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002204s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.002026s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001840s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_coupon` [ RunTime:0.008731s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ginco_api_coupon` LIMIT 1 [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_coupon` ORDER BY `ginco_api_coupon`.`id` DESC LIMIT 0,10 [ RunTime:0.000680s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:44+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/record?addtabs=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002773s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.002904s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001891s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001665s ]
+[ sql ] [ SQL ] SELECT `title`,`remark` FROM `ginco_auth_rule` WHERE  `name` = 'coupon/record' LIMIT 1 [ RunTime:0.000701s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:45+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/ajax/lang?callback=define&controllername=coupon.record&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003347s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.002588s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001157s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001893s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:45+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/record/hotels
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002820s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.001948s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001272s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001549s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001810s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_user_coupon` [ RunTime:0.008830s ]
+[ sql ] [ SQL ] SELECT `verify_hotel_id` FROM `ginco_api_user_coupon` WHERE  `verify_hotel_id` > 0 [ RunTime:0.000649s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_hotel` [ RunTime:0.001995s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `ginco_api_hotel` WHERE  `status` = 1  AND `id` IN ('') [ RunTime:0.000536s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:45+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/record/coupons
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002710s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.001896s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001484s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001855s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_user_coupon` [ RunTime:0.001811s ]
+[ sql ] [ SQL ] SELECT `coupon_id` FROM `ginco_api_user_coupon` WHERE  `coupon_id` > 0 [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_coupon` [ RunTime:0.002322s ]
+[ sql ] [ SQL ] SELECT `id`,`title` FROM `ginco_api_coupon` WHERE  `status` = 1  AND `id` IN (5) [ RunTime:0.000535s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:45+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/record/users
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003843s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.002398s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001603s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001127s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001767s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_user_coupon` [ RunTime:0.001780s ]
+[ sql ] [ SQL ] SELECT `uid` FROM `ginco_api_user_coupon` WHERE  `uid` > 0 [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_user` [ RunTime:0.010351s ]
+[ sql ] [ SQL ] SELECT `id`,`wechat_nickname` FROM `ginco_api_user` WHERE  `status` = 1  AND `id` IN (1) [ RunTime:0.000658s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:56:45+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/record/index?sort=ginco_api_user_coupon.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1587657404970
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003276s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.002171s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001474s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_user_coupon` [ RunTime:0.002569s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ginco_api_user_coupon` LIMIT 1 [ RunTime:0.000519s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_user_coupon` ORDER BY `ginco_api_user_coupon`.`id` DESC LIMIT 0,10 [ RunTime:0.000653s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:57:00+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/coupon/index?sort=ginco_api_coupon.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1587657403433
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003914s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.002226s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001227s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001764s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_coupon` [ RunTime:0.001682s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ginco_api_coupon` LIMIT 1 [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_coupon` ORDER BY `ginco_api_coupon`.`id` DESC LIMIT 0,10 [ RunTime:0.000677s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:57:02+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/coupon/coupon/edit/ids/6?dialog=1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003129s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.001395s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.001071s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001403s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.002059s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_coupon` [ RunTime:0.002495s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_coupon` WHERE  `id` = 6 LIMIT 1 [ RunTime:0.001047s ]
+---------------------------------------------------------------
+[ 2020-04-23T23:57:02+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/ajax/lang?callback=define&controllername=coupon.coupon&v=1.0.1
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002072s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.000937s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001657s ]

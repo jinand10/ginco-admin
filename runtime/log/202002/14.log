@@ -1,0 +1,10 @@
+---------------------------------------------------------------
+[ 2020-02-14T21:52:39+08:00 ] 172.21.0.1 GET ginco-admin.com/6Wm8eIkJu3.php/banner/banner/index?sort=ginco_api_banner.id&order=desc&offset=0&limit=10&filter=%7B%7D&op=%7B%7D&_=1581606408247
+[ sql ] [ DB ] CONNECT:[ UseTime:0.006463s ] mysql:host=mysql;port=3306;dbname=ginco_uapi_com_;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_group_access` [ RunTime:0.003297s ]
+[ sql ] [ SQL ] SELECT `aga`.`uid`,`aga`.`group_id`,`ag`.`id`,`ag`.`pid`,`ag`.`name`,`ag`.`rules` FROM `ginco_auth_group_access` `aga` LEFT JOIN `ginco_auth_group` `ag` ON `aga`.`group_id`=`ag`.`id` WHERE  (  aga.uid='1' and ag.status='normal' ) [ RunTime:0.002917s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_auth_rule` [ RunTime:0.001283s ]
+[ sql ] [ SQL ] SELECT `id`,`pid`,`condition`,`icon`,`name`,`title`,`ismenu` FROM `ginco_auth_rule` WHERE  `status` = 'normal' [ RunTime:0.001890s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ginco_api_banner` [ RunTime:0.006018s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `ginco_api_banner` LIMIT 1 [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `ginco_api_banner` ORDER BY `ginco_api_banner`.`id` DESC LIMIT 0,10 [ RunTime:0.000660s ]
